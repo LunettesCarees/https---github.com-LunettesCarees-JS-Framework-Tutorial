@@ -13,7 +13,7 @@ export class StripeService {
   }
 
   private loadStripe(): Promise<Stripe> {
-    return (window as any).stripe(environment.stripeKey);
+    return (window as any).Stripe(environment.stripeKey);
   }
 
   async redirectToCheckout(data: any): Promise<void> {
