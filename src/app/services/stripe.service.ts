@@ -20,7 +20,7 @@ export class StripeService {
     const stripe = await this.stripePromise;
 
     const response = await fetch(
-      environment.apiUrl + 'api/create-checkout-session',
+      environment.apiUrl + '/api/create-checkout-session',
       {
         method: 'POST',
         headers: {
